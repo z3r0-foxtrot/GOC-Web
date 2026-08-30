@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="United Nations Global Occult Coalition operational information portal."
+  >
+
+  <title>UNGOC // Coalition Command</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
+</head>
+
+<body>
+
+<div class="scanlines"></div>
+
+<header class="topbar">
+
+  <a
+    class="brand"
+    href="index.html"
+    aria-label="UNGOC home"
+  >
+    <span>UNGOC</span>
+    <small>GLOBAL OCCULT COALITION</small>
+  </a>
+
+  <nav aria-label="Primary navigation">
+    <a href="operations.html">Operations</a>
+    <a href="personnel.html">Personnel</a>
+    <a href="announcements.html">Directives</a>
+    <a href="morphs.html">Equipment</a>
+    <a href="system.html">System</a>
+  </nav>
+
+  <button
+    id="themeButton"
+    class="icon-button"
+    type="button"
+    aria-label="Toggle contrast"
+  >
+    ◐
+  </button>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+  <div class="hero-copy">
+
+    <p class="eyebrow">
+      UNITED NATIONS GLOBAL OCCULT COALITION // SCP:RP
+    </p>
+
+    <h1>
+      SECURE.<br>
+      <em>CONTAIN. ELIMINATE.</em>
+    </h1>
+
+    <p id="heroMessage">
+      Coalition operational intelligence network.
+    </p>
+
+    <div class="hero-actions">
+
+      <a
+        class="button primary"
+        href="operations.html"
+      >
+        View Operations
+      </a>
+
+      <a
+        class="button ghost"
+        href="personnel.html"
+      >
+        Personnel Registry
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="status-panel">
+
+    <p class="panel-label">
+      COALITION STATUS
+    </p>
+
+    <div class="status-row">
+      <span class="pulse"></span>
+      <span>NETWORK</span>
+      <strong id="syncStatus">
+        CONNECTING
+      </strong>
+    </div>
+
+    <div class="status-row">
+      <span class="indicator"></span>
+      <span>THEATER</span>
+      <strong id="theater">
+        SCP:RP
+      </strong>
+    </div>
+
+    <div class="status-row">
+      <span class="indicator"></span>
+      <span>THREAT</span>
+      <strong id="threatCondition">
+        NOMINAL
+      </strong>
+    </div>
+
+    <div class="status-row">
+      <span class="indicator"></span>
+      <span>LAST SYNC</span>
+      <strong id="lastSync">
+        —
+      </strong>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="metrics">
+
+  <article>
+    <span id="metricPersonnel">—</span>
+    <small>Active Personnel</small>
+  </article>
+
+  <article>
+    <span id="metricOperations">—</span>
+    <small>Operations Logged</small>
+  </article>
+
+  <article>
+    <span id="metricAnnouncements">—</span>
+    <small>Coalition Directives</small>
+  </article>
+
+</section>
+
+
+<section class="section">
+
+  <div class="section-heading">
+    <p class="eyebrow">
+      COALITION NETWORK
+    </p>
+
+    <h2>
+      Command Access
+    </h2>
+
+    <p>
+      Access operational records and Coalition information
+      published by authorized personnel.
+    </p>
+  </div>
+
+
+  <div class="dashboard-grid">
+
+    <a
+      class="dashboard-card"
+      href="operations.html"
+    >
+      <span class="card-number">
+        01 // OPERATIONS
+      </span>
+
+      <h3>
+        Interventions
+      </h3>
+
+      <p>
+        Review Coalition deployments,
+        interventions, and completed operations.
+      </p>
+    </a>
+
+
+    <a
+      class="dashboard-card"
+      href="personnel.html"
+    >
+      <span class="card-number">
+        02 // PERSONNEL
+      </span>
+
+      <h3>
+        Registry
+      </h3>
+
+      <p>
+        Access the current Coalition personnel
+        registry and organizational assignments.
+      </p>
+    </a>
+
+
+    <a
+      class="dashboard-card"
+      href="announcements.html"
+    >
+      <span class="card-number">
+        03 // DIRECTIVES
+      </span>
+
+      <h3>
+        Coalition Notices
+      </h3>
+
+      <p>
+        Read official announcements,
+        directives, and command notices.
+      </p>
+    </a>
+
+
+    <a
+      class="dashboard-card"
+      href="morphs.html"
+    >
+      <span class="card-number">
+        04 // EQUIPMENT
+      </span>
+
+      <h3>
+        Configuration
+      </h3>
+
+      <p>
+        Generate approved SCP:RP equipment
+        and morph commands.
+      </p>
+    </a>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="section-heading">
+    <p class="eyebrow">
+      LATEST INTELLIGENCE
+    </p>
+
+    <h2>
+      Coalition Directives
+    </h2>
+  </div>
+
+  <div
+    id="announcementsGrid"
+    class="announcement-grid"
+  >
+    <p class="loading">
+      Awaiting Coalition uplink…
+    </p>
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="section-heading">
+    <p class="eyebrow">
+      SITUATION REPORT
+    </p>
+
+    <h2>
+      Recent Interventions
+    </h2>
+  </div>
+
+  <div
+    id="operationsList"
+    class="operations-list"
+  >
+    <p class="loading">
+      Retrieving operational records…
+    </p>
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+  <span>
+    United Nations Global Occult Coalition
+  </span>
+
+  <span>
+    SCP:RP Faction Information Portal
+  </span>
+</footer>
+
+
+<template id="emptyState">
+  <p class="empty">
+    No records have been published.
+  </p>
+</template>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
